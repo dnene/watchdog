@@ -17,7 +17,7 @@
 # limitations under the License.
 
 
-from __future__ import with_statement
+
 import collections
 
 

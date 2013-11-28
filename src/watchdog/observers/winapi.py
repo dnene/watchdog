@@ -36,7 +36,7 @@
 # new BSD license.
 
 
-from __future__ import with_statement
+
 from watchdog.utils import platform
 
 

@@ -1,16 +1,16 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from __future__ import with_statement
+
 
 import sys
 import FSEvents
 
 try:
-    from cStringIO import StringIO
+    from io import StringIO
 except ImportError:
     try:
-        from StringIO import StringIO
+        from io import StringIO
     except ImportError:
         from io import StringIO
 

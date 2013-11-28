@@ -140,7 +140,7 @@ def read_directory_changes(handle, event_buffer, recursive):
 
     # Python 2/3 compat
     try:
-        int_class = long
+        int_class = int
     except NameError:
         int_class = int
     return event_buffer.raw, int_class(nbytes.value)

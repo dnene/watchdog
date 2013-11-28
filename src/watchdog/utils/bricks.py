@@ -42,7 +42,7 @@ import collections
 try:
     import queue
 except ImportError:
-    import Queue as queue
+    import queue as queue
 
 
 class SkipRepeatsQueue(queue.Queue):

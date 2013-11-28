@@ -49,13 +49,13 @@ Classes
    :show-inheritance:
 """
 
-from __future__ import with_statement
+
 import threading
 
 try:
     import queue  # IGNORE:F0401
 except ImportError:
-    import Queue as queue  # IGNORE:F0401
+    import queue as queue  # IGNORE:F0401
 
 from watchdog.utils import DaemonThread
 from watchdog.utils.bricks import SkipRepeatsQueue

@@ -23,7 +23,7 @@ import unittest2
 try:
     import queue  # IGNORE:F0401
 except ImportError:
-    import Queue as queue  # IGNORE:F0401
+    import queue as queue  # IGNORE:F0401
 
 from time import sleep
 

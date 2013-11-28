@@ -26,7 +26,7 @@ import tempfile
 try:
     import urllib.request as urllib2
 except ImportError:
-    import urllib2
+    import urllib.request, urllib.error, urllib.parse
 import subprocess
 from optparse import OptionParser
 
@@ -176,7 +176,7 @@ try:
     if not hasattr(pkg_resources, '_distribute'):
         raise ImportError
 except ImportError:
-    ez_code = urllib2.urlopen(
+    ez_code = urllib.request.urlopen(
         options.setup_source).read().replace('\r\n'.encode(), '\n'.encode())
     ez = {}
     exec(ez_code, ez)
